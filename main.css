@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body {
+	width: 980px;
+	margin: 0 auto;
+	border: 1px solid steelblue;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	background-color: #ffffff;
+}
+
+
+a {
+    font-weight: bold;
+}
+
+
+
+
+header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 20px;
+	background: linear-gradient(to bottom, white, lightsteelblue);
+	border-bottom: 2px solid steelblue;
+}
+
+
+
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+
+
+header h1 {
+    font-size: 2.2em;
+    color: steelblue;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+
+
+header h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+
+
+#topMenu {
+	background-color: steelblue;
+}
+
+/* User Clicks on a category, outlines it */
+.menu a:focus{
+	border: 2px solid white;
+	border-radius: 5px;
+}
+/* User Clicks on a category, outlines it*/
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding .5em 1em;
+	border-radius: 10px;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.menu {
+	list-style-type: none;
+	height: 35px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu li:has(.subMenu) {
+	position: relative;
+	&:hover > .subMenu {
+		display: block;
+	}
+}
+
+.subMenu {
+	position: absolute;
+	display: none;
+	left: 0;
+	background-color: steelblue;
+	color: white;
+}
+
+.subMenu a {
+	margin: 20px;
+	width: 10em;
+}
+
+main {
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+section {
+	flex-basis: 60%;
+	width: 20px;
+}
+
+
+section h2 {
+	font-size: 1.5em;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+
+section h3 {
+	font-size: 1.1em;
+	margin-top: 15px;
+	margin-bottom: 5px;
+
+}
+
+
+section p {
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+
+
+section a:link,
+section a:visited {
+    color: maroon;
+}
+
+
+section a:hover,
+section a:focus {
+    color: steelblue;
+}
+
+.sidebarA {
+	margin-top: 0;
+	border: 2px solid steelblue;
+	border-radius: 15px;
+	padding: 20px;
+	margin-bottom: 10px;
+	width: 180px;
+	height: auto;
+	flex-basis: 35%;
+}
+
+
+
+
+.sidebarA h2 {
+    color: maroon;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+
+
+.sidebarA ul {
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+
+.sidebarA a:link,
+.sidebarA a:visited {
+    color: steelblue;
+}
+
+
+.sidebarA a:hover,
+.sidebarA a:focus {
+    color: maroon;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: steelblue;
+    color: white;
+    padding-top: 12px 0;
+}
